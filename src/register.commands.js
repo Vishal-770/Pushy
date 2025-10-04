@@ -28,6 +28,18 @@ const commands = [
       },
     ],
   },
+  {
+    name: "github",
+    description: "Get GitHub user information",
+    options: [
+      {
+        name: "username",
+        description: "GitHub username to look up",
+        type: ApplicationCommandOptionType.String,
+        required: true,
+      },
+    ],
+  },
 ];
 
 const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
